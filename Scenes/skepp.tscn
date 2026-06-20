@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dietffk02hnqq"]
+
+[ext_resource type="Script" uid="uid://b3f04laep5ucf" path="res://Scenes/skepp.gd" id="1_sv36t"]
+[ext_resource type="Texture2D" uid="uid://cm2emtmcmq1r4" path="res://Sprites/PH_Skepp.png" id="2_ik28f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2lwfh"]
+radius = 80.224686
+
+[node name="Skepp" type="CharacterBody2D" unique_id=1751328495]
+script = ExtResource("1_sv36t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2027255908]
+position = Vector2(57, 53)
+scale = Vector2(0.5057291, 0.55)
+texture = ExtResource("2_ik28f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1146965762]
+shape = SubResource("CircleShape2D_2lwfh")
