@@ -2,4 +2,4 @@
 Very serious game jam thingamabob
 
 ## Game idea
-- [ ] asdasdsa
+- [x] asdasdsa
