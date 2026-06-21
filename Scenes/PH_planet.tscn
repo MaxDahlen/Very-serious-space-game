@@ -10,8 +10,8 @@ radius = 47.24
 script = ExtResource("1_txeki")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=288338709]
-position = Vector2(111.99997, 33)
-scale = Vector2(0.19166668, 0.18148145)
+position = Vector2(108.99994, 28)
+scale = Vector2(0.18854167, 0.17222223)
 texture = ExtResource("2_81i5c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=638755397]
