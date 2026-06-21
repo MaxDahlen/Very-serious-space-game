@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://nbeugla86o5k"]
 
-[ext_resource type="Script" uid="uid://c6us66g21ip0p" path="res://Scripts/character_body_2d.gd" id="1_txeki"]
+[ext_resource type="Script" uid="uid://c6us66g21ip0p" path="res://Scripts/Planet.gd" id="1_txeki"]
 [ext_resource type="Texture2D" uid="uid://mcb7artb3vy" path="res://Sprites/PH_planet.png" id="2_81i5c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_n44qi"]
@@ -10,8 +10,8 @@ radius = 47.24
 script = ExtResource("1_txeki")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=288338709]
-position = Vector2(108.99994, 28)
-scale = Vector2(0.18854167, 0.17222223)
+position = Vector2(111.99997, 33)
+scale = Vector2(0.19166668, 0.18148145)
 texture = ExtResource("2_81i5c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=638755397]
