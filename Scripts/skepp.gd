@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-var speed_x = 10.0
-var speed_y = 10.0
+var speed_x = 0.0
+var speed_y = 0.0
 var mus_vinkel = (0.0)
 var mus_vinkel_hastighet = (0.0)
 const engine_power = -10 #Är åt del håll om den är positiv
@@ -26,7 +26,7 @@ func Engine_burn(): #Medan musen är nedtryckt öka hastigheten mot musen
 			speed_y += sin(mus_vinkel) * engine_power
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	look_at(get_global_mouse_position()) #Vrider skeppet Estetiskt
 
 	Engine_burn()
