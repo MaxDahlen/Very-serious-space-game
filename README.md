@@ -3,3 +3,4 @@ Very serious game jam thingamabob
 
 ## Game idea
 - [x] asdasdsa
+- [ ] tst
