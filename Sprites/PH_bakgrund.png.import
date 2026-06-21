@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm2emtmcmq1r4"
-path="res://.godot/imported/PH_Skepp.png-2dbe050e23713ee0537e4075c57f7953.ctex"
+uid="uid://c8xr5ostnr6aw"
+path="res://.godot/imported/PH_bakgrund.png-10de25576eddd7e8a5c837ed5f4676d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/PH_Skepp.png"
-dest_files=["res://.godot/imported/PH_Skepp.png-2dbe050e23713ee0537e4075c57f7953.ctex"]
+source_file="res://Sprites/PH_bakgrund.png"
+dest_files=["res://.godot/imported/PH_bakgrund.png-10de25576eddd7e8a5c837ed5f4676d9.ctex"]
 
 [params]
 
