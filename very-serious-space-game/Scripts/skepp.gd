@@ -28,7 +28,7 @@ func Engine_burn(): #Medan musen är nedtryckt öka hastigheten mot musen
 
 func _physics_process(delta: float) -> void:
 	look_at(get_global_mouse_position()) #Vrider skeppet Estetiskt
-	
+
 	Engine_burn()
 	
 	velocity = Vector2(speed_x,speed_y) #Rör skeppet i x och y

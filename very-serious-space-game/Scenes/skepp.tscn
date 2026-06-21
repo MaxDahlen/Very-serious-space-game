@@ -10,7 +10,8 @@ radius = 80.224686
 script = ExtResource("1_sv36t")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2027255908]
-position = Vector2(57, 53)
+position = Vector2(-39, 66)
+rotation = 1.5707964
 scale = Vector2(0.5057291, 0.55)
 texture = ExtResource("2_ik28f")
 
