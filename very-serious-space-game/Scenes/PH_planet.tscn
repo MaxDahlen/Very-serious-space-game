@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://nbeugla86o5k"]
+
+[ext_resource type="Script" uid="uid://c6us66g21ip0p" path="res://Scripts/Planet.gd" id="1_txeki"]
+[ext_resource type="Texture2D" uid="uid://mcb7artb3vy" path="res://Sprites/PH_planet.png" id="2_81i5c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n44qi"]
+radius = 47.24
+
+[node name="Planet" type="CharacterBody2D" unique_id=539928459]
+script = ExtResource("1_txeki")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=288338709]
+position = Vector2(108.99994, 28)
+scale = Vector2(0.18854167, 0.17222223)
+texture = ExtResource("2_81i5c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=638755397]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1031357774]
+position = Vector2(6, -1)
+shape = SubResource("CircleShape2D_n44qi")
