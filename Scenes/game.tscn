@@ -23,7 +23,7 @@ position = Vector2(-2, -30)
 
 [node name="Camera2D" type="Camera2D" parent="Skepp" unique_id=899565263]
 position = Vector2(2, -8)
-zoom = Vector2(0.5, 0.5)
+zoom = Vector2(4, 4)
 position_smoothing_enabled = true
 
 [node name="Planet" parent="." unique_id=141375316 instance=ExtResource("1_ebmjs")]

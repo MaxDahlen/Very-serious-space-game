@@ -6,6 +6,8 @@ var mus_vinkel = (0.0)
 var mus_vinkel_hastighet = (0.0)
 const engine_power = -10 #Är åt del håll om den är positiv
 const max_speed = 500
+@onready var animated_sprite = $AnimatedSprite2D
+
 
 func Unviversum_speed ():
 	mus_vinkel = get_global_mouse_position().angle_to_point(position) #tar vinkeln mellan skeppet och musen
@@ -19,11 +21,14 @@ func Unviversum_speed ():
 
 func Engine_burn(): #Medan musen är nedtryckt öka hastigheten mot musen
 	if Input.is_action_pressed("Klick"):
+		animated_sprite.play('Engine Active')
 		if abs(speed_x + cos(mus_vinkel) * engine_power) <= max_speed: #Kollar så vi inte får oändligt snabbt skepp (kanske ska tas bort)
 			speed_x += cos(mus_vinkel) * engine_power
 			
 		if abs(speed_y + sin(mus_vinkel) * engine_power) <= max_speed:
 			speed_y += sin(mus_vinkel) * engine_power
+	else:
+		animated_sprite.play('default')
 
 
 func _physics_process(_delta: float) -> void:
