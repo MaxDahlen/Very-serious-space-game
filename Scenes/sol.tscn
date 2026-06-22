@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://cgg2emq1mh4ec"]
+
+[ext_resource type="Texture2D" uid="uid://bgyqxm8itenbx" path="res://Sprites/sol/sol_v2.png" id="1_tlfmd"]
+[ext_resource type="Texture2D" uid="uid://djce02oik4khd" path="res://Sprites/sol/sol_v3.png" id="2_ew8co"]
+[ext_resource type="Texture2D" uid="uid://d2i7tty348x6v" path="res://Sprites/sol/sol_v4.png" id="3_4r3ve"]
+[ext_resource type="Texture2D" uid="uid://j3i4gkays6n1" path="res://Sprites/sol/sol_v5.png" id="4_aasgu"]
+[ext_resource type="Texture2D" uid="uid://b4cc8273cfr7c" path="res://Sprites/sol/sol_v6.png" id="5_mdpjm"]
+[ext_resource type="Texture2D" uid="uid://bnionlyoywkph" path="res://Sprites/sol/sol_v7.png" id="6_akb5g"]
+[ext_resource type="Texture2D" uid="uid://bfgccb6kvtviw" path="res://Sprites/sol/sol_v8.png" id="7_20cb1"]
+[ext_resource type="Texture2D" uid="uid://dlniq836qr7x6" path="res://Sprites/sol/sol_v9.png" id="8_3ihrh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4r3ve"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tlfmd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ew8co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4r3ve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_aasgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mdpjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_akb5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_20cb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3ihrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3ihrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_20cb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_akb5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mdpjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_aasgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4r3ve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ew8co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_tlfmd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aasgu"]
+radius = 559.23
+
+[node name="Sol" type="AnimatableBody2D" unique_id=2058188902]
+position = Vector2(1, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=15971646]
+position = Vector2(0.9999962, 3.000002)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_4r3ve")
+autoplay = "default"
+frame = 15
+frame_progress = 0.89795566
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=8518796]
+position = Vector2(0.9999981, 3)
+shape = SubResource("CircleShape2D_aasgu")

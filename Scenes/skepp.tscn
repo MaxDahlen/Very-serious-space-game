@@ -61,6 +61,5 @@ position = Vector2(-3, 0)
 rotation = 1.5707964
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_xwxr1")
-animation = &"Engine Active"
 autoplay = "default"
-frame_progress = 0.5587868
+frame_progress = 0.23784366

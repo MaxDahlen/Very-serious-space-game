@@ -3,27 +3,28 @@
 [ext_resource type="PackedScene" uid="uid://nbeugla86o5k" path="res://Scenes/PH_planet.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://c8xr5ostnr6aw" path="res://Sprites/PH_bakgrund.png" id="1_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://dietffk02hnqq" path="res://Scenes/skepp.tscn" id="2_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://cgg2emq1mh4ec" path="res://Scenes/sol.tscn" id="4_3dryh"]
 
 [node name="Game" type="Node2D" unique_id=762152989]
 
 [node name="bakgrund" type="TextureRect" parent="." unique_id=1058805344]
-offset_left = -26430.0
-offset_top = -17134.0
-offset_right = 35107.0
-offset_bottom = 25552.0
+offset_left = -26536.0
+offset_top = -16424.0
+offset_right = 35001.0
+offset_bottom = 26262.0
 mouse_filter = 2
 texture = ExtResource("1_wrm1d")
 stretch_mode = 1
 
 [node name="CharacterBody2D" parent="." unique_id=539928459 instance=ExtResource("1_ebmjs")]
-position = Vector2(226, 5)
+position = Vector2(1232, 157)
 
 [node name="Skepp" parent="." unique_id=1751328495 instance=ExtResource("2_qxrlw")]
-position = Vector2(-2, -30)
+position = Vector2(843, 81)
 
 [node name="Camera2D" type="Camera2D" parent="Skepp" unique_id=899565263]
-position = Vector2(2, -8)
-zoom = Vector2(4, 4)
+position = Vector2(5, 3)
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
 [node name="Planet" parent="." unique_id=141375316 instance=ExtResource("1_ebmjs")]
@@ -46,3 +47,6 @@ position = Vector2(8666, -930)
 
 [node name="Planet7" parent="." unique_id=2124214712 instance=ExtResource("1_ebmjs")]
 position = Vector2(-3423, 4)
+
+[node name="Sol" parent="." unique_id=2058188902 instance=ExtResource("4_3dryh")]
+position = Vector2(-7, 6)
