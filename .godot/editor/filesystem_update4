@@ -1,2 +1,5 @@
+res://Scenes/planet_1.tscn
 res://Scenes/game.tscn
-res://Scenes/sol.tscn
+res://Scripts/Planet.gd
+res://Scenes/planet_1.gd
+res://Scripts/Global_variables.gd

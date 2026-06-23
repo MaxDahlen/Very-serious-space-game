@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://if1ua65us74r"]
+
+[ext_resource type="PackedScene" uid="uid://nbeugla86o5k" path="res://Scenes/PH_planet.tscn" id="1_484o5"]
+[ext_resource type="Texture2D" uid="uid://dgurte8xjofxv" path="res://Sprites/Planet_1/planet_1_b1.png" id="2_aui8e"]
+[ext_resource type="Texture2D" uid="uid://byq5bxmnsuexn" path="res://Sprites/Planet_1/planet_1_b2.png" id="3_cjc4u"]
+[ext_resource type="Texture2D" uid="uid://bv35o818hpfa5" path="res://Sprites/Planet_1/planet_1_b3.png" id="4_5h55x"]
+[ext_resource type="Texture2D" uid="uid://ii12ffanmo8x" path="res://Sprites/Planet_1/planet_1_b5.png" id="5_4xy80"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wmxj2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_aui8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cjc4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5h55x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4xy80")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Planet" unique_id=539928459 instance=ExtResource("1_484o5")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=288338709]
+visible = false
+position = Vector2(550, 153)
+
+[node name="AnimatedSprite2D" parent="." index="1" unique_id=638755397]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_wmxj2")
+autoplay = "default"
+frame_progress = 0.36400428
+
+[node name="CollisionShape2D" parent="." index="2" unique_id=1031357774]
+position = Vector2(2, 2)

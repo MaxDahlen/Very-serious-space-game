@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://0tamblyjkl7a"]
 
-[ext_resource type="PackedScene" uid="uid://nbeugla86o5k" path="res://Scenes/PH_planet.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://c8xr5ostnr6aw" path="res://Sprites/PH_bakgrund.png" id="1_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://dietffk02hnqq" path="res://Scenes/skepp.tscn" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://cgg2emq1mh4ec" path="res://Scenes/sol.tscn" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://bvoby2xe0m43j" path="res://Scenes/planet_2.tscn" id="5_i6g32"]
+[ext_resource type="PackedScene" uid="uid://if1ua65us74r" path="res://Scenes/planet_1.tscn" id="5_wowpa"]
 
 [node name="Game" type="Node2D" unique_id=762152989]
 
@@ -16,37 +17,19 @@ mouse_filter = 2
 texture = ExtResource("1_wrm1d")
 stretch_mode = 1
 
-[node name="CharacterBody2D" parent="." unique_id=539928459 instance=ExtResource("1_ebmjs")]
-position = Vector2(1232, 157)
-
 [node name="Skepp" parent="." unique_id=1751328495 instance=ExtResource("2_qxrlw")]
 position = Vector2(843, 81)
 
 [node name="Camera2D" type="Camera2D" parent="Skepp" unique_id=899565263]
-position = Vector2(5, 3)
+position = Vector2(-2311, -49)
 zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
-[node name="Planet" parent="." unique_id=141375316 instance=ExtResource("1_ebmjs")]
-position = Vector2(5464, -209)
-
-[node name="Planet2" parent="." unique_id=1197685901 instance=ExtResource("1_ebmjs")]
-position = Vector2(3575, 657)
-
-[node name="Planet3" parent="." unique_id=2130742657 instance=ExtResource("1_ebmjs")]
-position = Vector2(2075, 916)
-
-[node name="Planet4" parent="." unique_id=132898545 instance=ExtResource("1_ebmjs")]
-position = Vector2(1239, 2733)
-
-[node name="Planet5" parent="." unique_id=1773822909 instance=ExtResource("1_ebmjs")]
-position = Vector2(4830, -3352)
-
-[node name="Planet6" parent="." unique_id=25201833 instance=ExtResource("1_ebmjs")]
-position = Vector2(8666, -930)
-
-[node name="Planet7" parent="." unique_id=2124214712 instance=ExtResource("1_ebmjs")]
-position = Vector2(-3423, 4)
-
 [node name="Sol" parent="." unique_id=2058188902 instance=ExtResource("4_3dryh")]
 position = Vector2(-7, 6)
+
+[node name="Planet1" parent="." unique_id=539928459 instance=ExtResource("5_wowpa")]
+position = Vector2(1115, 126)
+
+[node name="Planet2" parent="." unique_id=1567716804 instance=ExtResource("5_i6g32")]
+position = Vector2(-1452, 4)
